@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 10rem;
+}
+.nav-list {
+  display: flex;
+  gap: 2.4rem;
+  color: #fff;
+  font-size: 1.6rem;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.hero {
+  background-image: url("./assets/iveria-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h4 {
+  color: #fff;
+}
+span {
+  color: #fff;
+}
