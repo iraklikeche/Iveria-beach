@@ -11,21 +11,46 @@ html {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 3rem 10rem;
 }
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-white {
+  border: 1px solid #fff;
+  padding: 5px 2rem;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn-brown {
+  background-color: #170a00;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 1.2rem 3.2rem;
+}
+
 .nav-list {
   display: flex;
+  align-items: center;
   gap: 2.4rem;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   list-style: none;
   text-transform: uppercase;
 }
 
 .hero {
   background-image: url("./assets/iveria-1.jpg");
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .section-main {
@@ -36,9 +61,104 @@ nav {
   height: 100vh;
 }
 
-h4 {
+.heading-secondary {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.bar,
+.restaurant {
+  text-transform: uppercase;
+  font-size: 1rem;
   color: #fff;
 }
-span {
+
+/* SECTION-2 */
+.section-2 {
+  margin-top: 12.6rem;
+  height: 60vh;
+}
+
+.iveria-life {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 12.6rem 3.2rem;
+}
+
+.heading-experience {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  color: #170a00;
+}
+
+/* SECTION-3 */
+
+.hero-2 {
+  background-image: url("./assets/iveria-2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eat-drink {
+  text-align: center;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 2.4rem;
   color: #fff;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+}
+
+.eat-drink-btn {
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 3.2rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* SECTION-4 */
+
+.section-4 {
+  height: 40vh;
+}
+
+.booking-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.booking-box {
+  text-align: center;
+}
+
+/* SECTION-5 */
+.our-space {
+  background-image: url("./assets/iveria-3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-gallery {
+  padding: 1rem 4.2rem;
 }
