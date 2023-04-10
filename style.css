@@ -53,6 +53,19 @@ a:visited {
   background-size: cover;
 }
 
+.hero-2,
+.hero-3,
+.hero-4 {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 9.6rem;
+}
+
 .section-main {
   display: flex;
   flex-direction: column;
@@ -75,7 +88,6 @@ a:visited {
 
 /* SECTION-2 */
 .section-2 {
-  margin-top: 12.6rem;
   height: 60vh;
 }
 
@@ -100,12 +112,6 @@ a:visited {
 
 .hero-2 {
   background-image: url("./assets/iveria-2.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .eat-drink {
@@ -148,6 +154,10 @@ a:visited {
 }
 
 /* SECTION-5 */
+
+.section-5 {
+  margin-bottom: 9.6rem;
+}
 .our-space {
   background-image: url("./assets/iveria-3.jpg");
   background-size: cover;
@@ -157,8 +167,128 @@ a:visited {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 9.6rem;
 }
 
 .btn-gallery {
   padding: 1rem 4.2rem;
+}
+
+.space-box {
+  padding: 0 15rem;
+  margin-bottom: 5rem;
+}
+
+.space-img {
+  width: 100%;
+}
+
+.space-description-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.description-text-box {
+  width: 60%;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 0 25rem;
+  justify-items: center;
+  align-items: center;
+  row-gap: 5rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.top-left {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.top-right {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.middle {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.bottom-left {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.bottom-right {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.span-description {
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+/* SECTION-6 */
+
+.hero-3 {
+  background-image: url(./assets/iveria-1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 9.6rem;
+}
+
+.events-description-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+
+.event-description-text {
+  width: 50%;
+}
+
+/* SECTION-7 */
+
+.hero-4 {
+  background-image: url(./assets/iveria-3.jpg);
+}
+
+.functions-description-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 6.4rm;
+}
+
+.functions-description-text {
+  width: 50%;
+}
+
+.learn-more {
+  font-size: 1.6rem;
+  color: #ba8746 !important;
+  border-bottom: 1px solid #ba8746;
 }
