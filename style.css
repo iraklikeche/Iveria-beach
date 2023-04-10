@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #fff8e7;
 }
 
 html {
@@ -21,12 +22,33 @@ a:visited {
   color: #fff;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+}
+
 .btn-white {
   border: 1px solid #fff;
-  padding: 5px 2rem;
+  padding: 8px 3.2rem;
   background-color: transparent;
   color: #fff;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-white:hover {
+  color: #000;
+  background-color: #fff;
 }
 
 .btn-brown {
@@ -51,6 +73,7 @@ a:visited {
   background-image: url("./assets/iveria-1.jpg");
   background-position: center;
   background-size: cover;
+  height: 100vh;
 }
 
 .hero-2,
@@ -59,19 +82,12 @@ a:visited {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-bottom: 9.6rem;
 }
 
-.section-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.main-box {
+  height: 100%;
 }
 
 .heading-secondary {
@@ -94,7 +110,6 @@ a:visited {
 .iveria-life {
   width: 50%;
   margin: 0 auto;
-  text-align: center;
   padding: 12.6rem 3.2rem;
 }
 
@@ -114,10 +129,6 @@ a:visited {
   background-image: url("./assets/iveria-2.jpg");
 }
 
-.eat-drink {
-  text-align: center;
-}
-
 .heading {
   text-transform: uppercase;
   font-size: 2.4rem;
@@ -126,7 +137,8 @@ a:visited {
   margin-bottom: 2rem;
 }
 
-.eat-drink-btn {
+.eat-drink-btn,
+.btn-gallery {
   cursor: pointer;
   color: #fff;
   border: 1px solid #fff;
@@ -143,14 +155,7 @@ a:visited {
 }
 
 .booking-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
-}
-
-.booking-box {
-  text-align: center;
 }
 
 /* SECTION-5 */
@@ -163,15 +168,7 @@ a:visited {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin-bottom: 9.6rem;
-}
-
-.btn-gallery {
-  padding: 1rem 4.2rem;
 }
 
 .space-box {
@@ -184,15 +181,11 @@ a:visited {
 }
 
 .space-description-text-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 5rem;
 }
 
 .description-text-box {
   width: 60%;
-  text-align: center;
 }
 
 .container {
@@ -247,21 +240,9 @@ a:visited {
 
 .hero-3 {
   background-image: url(./assets/iveria-1.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 9.6rem;
 }
 
 .events-description-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin-bottom: 6.4rem;
 }
 
@@ -271,16 +252,17 @@ a:visited {
 
 /* SECTION-7 */
 
+.section-7 {
+  margin-bottom: 9.6rem;
+}
+
 .hero-4 {
   background-image: url(./assets/iveria-3.jpg);
 }
 
 .functions-description-box {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   align-items: center;
-  margin-bottom: 6.4rm;
+  margin-bottom: 6.4rem;
 }
 
 .functions-description-text {
@@ -288,7 +270,47 @@ a:visited {
 }
 
 .learn-more {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #ba8746 !important;
+  text-transform: uppercase;
   border-bottom: 1px solid #ba8746;
+}
+
+.learn-more-box {
+  margin-top: 2rem;
+}
+
+/* FOOTER */
+
+.pre-footer {
+  margin: 0 15rem;
+  padding: 8.4rem;
+  background-color: rgba(76, 36, 36, 0.455);
+  margin-bottom: 9.6rem;
+}
+
+.subscribe {
+  margin-top: 3.2rem;
+}
+
+.email {
+  padding: 1.2rem 3.2rem 1.2rem 1.2rem;
+  margin-right: 1.2rem;
+}
+
+.social-media {
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.address,
+.contact-details {
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.email-address,
+.phone-number {
+  color: #ba8746;
+  font-size: 1.4rem;
 }
