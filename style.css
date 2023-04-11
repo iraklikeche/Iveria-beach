@@ -13,13 +13,25 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 10rem;
+  padding: 1.5rem 10rem;
 }
 
 a:link,
 a:visited {
   text-decoration: none;
   color: #fff;
+}
+
+.iveria {
+  display: none;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ded3c9;
 }
 
 .flex {
@@ -34,6 +46,12 @@ a:visited {
 
 .btn {
   border: none;
+  text-decoration: none;
+}
+
+.mgt {
+  display: inline-block;
+  margin-top: 3rem;
 }
 
 .btn-white {
@@ -56,17 +74,35 @@ a:visited {
   color: #fff;
   text-transform: uppercase;
   border: none;
-  padding: 1.2rem 3.2rem;
+  padding: 1.5rem 3.2rem;
+}
+
+.btn-brown:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
+.booking-sticky {
+  border-color: #000;
+}
+
+.booking-sticky.btn-white:hover {
+  color: #fff !important;
+  transition: 0.3s ease-in-out;
+  background-color: #170a00;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
   gap: 2.4rem;
-  color: #fff;
   font-size: 1.4rem;
   list-style: none;
   text-transform: uppercase;
+}
+
+.page-link {
+  color: #000 !important;
 }
 
 .hero {
@@ -90,6 +126,10 @@ a:visited {
   height: 100%;
 }
 
+.main-text-box {
+  flex-direction: column;
+}
+
 .heading-secondary {
   color: #fff;
   font-size: 2rem;
@@ -103,9 +143,6 @@ a:visited {
 }
 
 /* SECTION-2 */
-.section-2 {
-  height: 60vh;
-}
 
 .iveria-life {
   width: 50%;
@@ -150,7 +187,7 @@ a:visited {
 
 /* SECTION-4 */
 
-.section-4 {
+.section-3 {
   height: 40vh;
 }
 
@@ -160,7 +197,7 @@ a:visited {
 
 /* SECTION-5 */
 
-.section-5 {
+.section-4 {
   margin-bottom: 9.6rem;
 }
 .our-space {
@@ -252,7 +289,7 @@ a:visited {
 
 /* SECTION-7 */
 
-.section-7 {
+.section-6 {
   margin-bottom: 9.6rem;
 }
 
@@ -295,7 +332,7 @@ a:visited {
 
 .email {
   padding: 1.2rem 3.2rem 1.2rem 1.2rem;
-  margin-right: 1.2rem;
+  margin-right: 5px;
 }
 
 .social-media {
@@ -313,4 +350,31 @@ a:visited {
 .phone-number {
   color: #ba8746;
   font-size: 1.4rem;
+}
+
+.youtube {
+  width: 24px;
+  height: 24px;
+}
+
+.fb {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-icon:hover {
+  transition: 0.3s ease-in-out;
+  opacity: 0.5;
+}
+
+.trip-icon,
+.facebook,
+.youtube {
+  fill: #fff;
+}
+
+.footer-icon {
+  background-color: #170a00;
+  padding: 1rem;
+  border-radius: 50%;
 }
