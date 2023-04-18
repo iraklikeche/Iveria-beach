@@ -7,6 +7,7 @@ body {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -91,6 +92,8 @@ a:visited {
   transition: 0.3s ease-in-out;
   background-color: #170a00;
 }
+
+/* *************************** */
 
 .nav-list {
   display: flex;
@@ -344,6 +347,7 @@ a:visited {
 .contact-details {
   flex-direction: column;
   margin-bottom: 2rem;
+  gap: 5px;
 }
 
 .email-address,
@@ -377,4 +381,68 @@ a:visited {
   background-color: #170a00;
   padding: 1rem;
   border-radius: 50%;
+}
+
+/* EAT AND DRINK PAGE */
+
+.eat-drink-hero {
+  background-image: url(./assets/iveria-4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.menu {
+  gap: 2.4rem;
+  margin-bottom: 9.4rem;
+  text-transform: uppercase;
+}
+
+.menu-box {
+  padding: 0 15rem;
+  align-items: baseline;
+  margin-bottom: 9.2rem;
+}
+
+.menu-btn {
+  outline: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.menu-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 5.4rem;
+}
+
+.meal-title {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.meal-ingredients {
+  font-size: 1.4rem;
+}
+
+.col {
+  width: 60%;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 50%;
+}
+
+.odd {
+  justify-content: flex-start;
 }

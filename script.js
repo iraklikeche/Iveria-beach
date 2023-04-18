@@ -20,5 +20,11 @@ window.addEventListener("scroll", function () {
     links.forEach((link) => {
       link.classList.remove("page-link");
     });
+    btnBooking.classList.remove("booking-sticky");
   }
 });
+
+function scrollElement(e) {
+  let element = document.getElementById(`${e}`);
+  element.scrollIntoView({ block: "start", behavior: "smooth" });
+}
