@@ -1,3 +1,14 @@
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -410,6 +421,12 @@ a:visited {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.active {
+  color: #ba8746;
+  border-bottom: 1px solid #ba8746;
 }
 
 .menu-header {
@@ -445,4 +462,82 @@ a:visited {
 
 .odd {
   justify-content: flex-start;
+}
+
+/* *********************** FUNTION PAGE ************************* */
+
+.functions-hero {
+  background-image: url(./assets/iveria-4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  margin-bottom: 12.4rem;
+}
+
+.functions-heading {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.functions-text {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.functions-email,
+.functions-phone-number {
+  display: inline-block;
+  color: #ba8746 !important;
+  border-bottom: 1px solid #ba8746;
+}
+
+.functions-email {
+  margin-bottom: 1rem;
+}
+
+.functions-phone-number {
+  margin-bottom: 3.2rem;
+}
+
+.hr {
+  border-bottom: 1px solid rgba(23, 10, 0, 0.15);
+  margin: 6.4rem 15rem;
+}
+
+.input-box {
+  margin-bottom: 4.8rem;
+}
+
+.form-container {
+  padding: 0 15rem;
+}
+
+.required::after {
+  content: " *";
+  color: #000;
+}
+
+.label-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.input-field {
+  padding: 1.2rem;
+  margin-bottom: 2.4rem;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.full-name {
+  display: flex;
+}
+
+input[type="date"],
+input[type="time"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }

@@ -28,3 +28,45 @@ function scrollElement(e) {
   let element = document.getElementById(`${e}`);
   element.scrollIntoView({ block: "start", behavior: "smooth" });
 }
+
+function loadMenu(menuFile) {
+  const menuContainer = document.getElementById("menu-container");
+
+  fetch(menuFile)
+    .then((response) => response.text())
+    .then((html) => {
+      menuContainer.innerHTML = html;
+    })
+    .catch((error) => {
+      console.warn(error);
+    });
+}
+
+const allDayMenu = document.getElementById("allday-btn");
+const drinksMenu = document.getElementById("drinks-btn");
+const nonAlcoholMenu = document.getElementById("nonalcohol-btn");
+
+allDayMenu.addEventListener("click", () => {
+  loadMenu("allDayMenu.html");
+  allDayMenu.classList.add("active");
+  drinksMenu.classList.remove("active");
+  nonAlcoholMenu.classList.remove("active");
+});
+
+drinksMenu.addEventListener("click", () => {
+  loadMenu("drinksMenu.html");
+  drinksMenu.classList.add("active");
+  allDayMenu.classList.remove("active");
+  nonAlcoholMenu.classList.remove("active");
+});
+
+nonAlcoholMenu.addEventListener("click", () => {
+  loadMenu("nonAlco.html");
+  nonAlcoholMenu.classList.add("active");
+  allDayMenu.classList.remove("active");
+  drinksMenu.classList.remove("active");
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadMenu("allDayMenu.html");
+});
