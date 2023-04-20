@@ -129,7 +129,7 @@ a:visited {
 }
 
 .hero {
-  background-image: url("./assets/iveria-1.jpg");
+  background-image: url("../assets/iveria-1.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -187,7 +187,7 @@ a:visited {
 /* SECTION-3 */
 
 .hero-2 {
-  background-image: url("./assets/iveria-2.jpg");
+  background-image: url("../assets/iveria-2.jpg");
 }
 
 .heading {
@@ -225,7 +225,7 @@ a:visited {
   margin-bottom: 9.6rem;
 }
 .our-space {
-  background-image: url("./assets/iveria-3.jpg");
+  background-image: url("../assets/iveria-3.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -300,7 +300,7 @@ a:visited {
 /* SECTION-6 */
 
 .hero-3 {
-  background-image: url(./assets/iveria-1.jpg);
+  background-image: url(../assets/iveria-1.jpg);
 }
 
 .events-description-box {
@@ -318,7 +318,7 @@ a:visited {
 }
 
 .hero-4 {
-  background-image: url(./assets/iveria-3.jpg);
+  background-image: url(../assets/iveria-3.jpg);
 }
 
 .functions-description-box {
@@ -407,7 +407,7 @@ a:visited {
 /* EAT AND DRINK PAGE */
 
 .eat-drink-hero {
-  background-image: url(./assets/iveria-4.jpg);
+  background-image: url(../assets/iveria-4.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -477,7 +477,7 @@ a:visited {
 /* *********************** FUNTION PAGE ************************* */
 
 .functions-hero {
-  background-image: url(./assets/iveria-4.jpg);
+  background-image: url(../assets/iveria-4.jpg);
   background-size: cover;
   background-position: center;
   height: 75vh;
@@ -610,7 +610,7 @@ label {
 /* BOOKING */
 
 .booking-hero {
-  background-image: url(./assets/iveria-4.jpg);
+  background-image: url(../assets/iveria-4.jpg);
   background-size: cover;
   background-position: center;
   height: 65vh;

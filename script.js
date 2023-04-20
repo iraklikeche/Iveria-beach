@@ -47,26 +47,26 @@ const drinksMenu = document.getElementById("drinks-btn");
 const nonAlcoholMenu = document.getElementById("nonalcohol-btn");
 
 allDayMenu.addEventListener("click", () => {
-  loadMenu("allDayMenu.html");
+  loadMenu("./menu/allDayMenu.html");
   allDayMenu.classList.add("active");
   drinksMenu.classList.remove("active");
   nonAlcoholMenu.classList.remove("active");
 });
 
 drinksMenu.addEventListener("click", () => {
-  loadMenu("drinksMenu.html");
+  loadMenu("./menu/drinksMenu.html");
   drinksMenu.classList.add("active");
   allDayMenu.classList.remove("active");
   nonAlcoholMenu.classList.remove("active");
 });
 
 nonAlcoholMenu.addEventListener("click", () => {
-  loadMenu("nonAlco.html");
+  loadMenu("./menu/nonAlco.html");
   nonAlcoholMenu.classList.add("active");
   allDayMenu.classList.remove("active");
   drinksMenu.classList.remove("active");
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadMenu("allDayMenu.html");
+  loadMenu("./menu/allDayMenu.html");
 });
